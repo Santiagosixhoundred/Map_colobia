@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ciudades y Culturas de Colombia</title>
+</head>
+<body>
+    <h1>Conoce las Ciudades de Colombia</h1>
+    <p>Haz click en las ciudades en el mapa para conocer su cultura</p>
+    
+    <h2>Mapa de Colombia</h2>
+    <div style="position: relative;">
+        <img src="images/d2e8502977b8253b561e54aaa0ee73b6.gif" alt="Mapa de Colombia" width="500">
+    
+        <div style="position: absolute; top: 100px; left: 200px; width: 20px; height: 20px; background-color: red; border-radius: 50%; cursor: pointer;" 
+             onclick="mostrarCiudad1()"
+             title="Cartagena">
+        </div>
+        
+        <div style="position: absolute; top: 250px; left: 180px; width: 20px; height: 20px; background-color: blue; border-radius: 50%; cursor: pointer;" 
+             onclick="mostrarCiudad2()"
+             title="Bogota">
+        </div>
+        
+        <div style="position: absolute; top: 200px; left: 150px; width: 20px; height: 20px; background-color: green; border-radius: 50%; cursor: pointer;" 
+             onclick="mostrarCiudad3()"
+             title="Cali">
+        </div>
+    </div>
+    
+    <br><br>
+    
+    <div id="info-inicial">
+        <h3>Instrucciones</h3>
+        <p>Haz click en los puntos de colores en el mapa:</p>
+        <p>🔴 Punto rojo = Cartagena</p>
+        <p>🔵 Punto azul = Bogota</p>
+        <p>🟢 Punto verde = Cali</p>
+    </div>
+    
+    <div id="ciudad1" style="display: none;">
+        <h3>Cartagena de Indias</h3>
+        <p><b>Cultura y tradiciones:</b></p>
+        <p>- Es una ciudad muy alegre con musica vallenata y champeta</p>
+        <p>- Las personas bailan mucho en las calles</p>
+        <p>- Tienen el Festival Internacional de Cine</p>
+        <p>- La gente habla muy cantadito y dice "epa" mucho</p>
+        <p>- Las casas tienen colores muy bonitos y balcones con flores</p>
+        
+        <p><b>Comida cultural:</b></p>
+        <p>- Arepas de huevo (la especialidad de alli)</p>
+        <p>- Posta negra cartagenera</p>
+        <p>- Dulces de coco que venden las palenqueras</p>
+        <p>- Limonada de coco bien fria</p>
+        
+        <p><b>Como vive la gente:</b></p>
+        <p>Los cartageneros son muy amables y hospitalarios. Trabajan mucho en turismo, en el puerto y vendiendo cosas a los turistas. Les gusta mucho la rumba y las fiestas. Siempre estan contentos y te reciben con una sonrisa.</p>
+    </div>
+    
+    <div id="ciudad2" style="display: none;">
+        <h3>Bogota - Capital de Colombia</h3>
+        <p><b>Cultura y tradiciones:</b></p>
+        <p>- Es una ciudad muy grande con muchos museos</p>
+        <p>- La gente lee mucho libros (la llaman Atenas suramericana)</p>
+        <p>- Tienen el Festival de Teatro mas importante de Latinoamerica</p>
+        <p>- Los domingos cierran calles para que la gente haga ciclovias</p>
+        <p>- Hay muchos grafitis bonitos en las paredes</p>
+        
+        <p><b>Comida cultural:</b></p>
+        <p>- Ajiaco bogotano (sopa con pollo y papas)</p>
+        <p>- Tamales bogotanos</p>
+        <p>- Chocolate con queso</p>
+        <p>- Obleas con arequipe</p>
+        
+        <p><b>Como vive la gente:</b></p>
+        <p>Los bogotanos son muy trabajadores y estudiosos. Siempre andan apurados porque la ciudad es muy grande. Les gusta mucho ir a cafeterias a conversar. Son educados pero a veces parecen serios, pero cuando los conoces son muy cheveres.</p>
+    </div>
+    
+    <div id="ciudad3" style="display: none;">
+        <h3>Cali - La Sucursal del Cielo</h3>
+        <p><b>Cultura y tradiciones:</b></p>
+        <p>- Es la capital mundial de la salsa</p>
+        <p>- Todo el mundo sabe bailar salsa desde pequeño</p>
+        <p>- Tienen la Feria de Cali en diciembre</p>
+        <p>- La gente sale a bailar hasta muy tarde</p>
+        <p>- Dicen "vallecaucano" y hablan muy sabroso</p>
+        
+        <p><b>Comida cultural:</b></p>
+        <p>- Sancocho valluno</p>
+        <p>- Empanadas vallunas (mas grandes que las normales)</p>
+        <p>- Chuleta valluna</p>
+        <p>- Lulada (bebida con lulo y hielo)</p>
+        
+        <p><b>Como vive la gente:</b></p>
+        <p>Los caleños son muy rumberos y alegres. Siempre estan bailando o hablando de salsa. Son muy amigables y te invitan a bailar aunque no sepas. Les gusta mucho la fiesta y son muy buenos anfitriones. El calor los pone contentos todo el tiempo.</p>
+    </div>
+    
+    <script>
+        function mostrarCiudad1() {
+            document.getElementById("info-inicial").style.display = "none";
+            document.getElementById("ciudad1").style.display = "block";
+            document.getElementById("ciudad2").style.display = "none";
+            document.getElementById("ciudad3").style.display = "none";
+        }
+        
+        function mostrarCiudad2() {
+            document.getElementById("info-inicial").style.display = "none";
+            document.getElementById("ciudad1").style.display = "none";
+            document.getElementById("ciudad2").style.display = "block";
+            document.getElementById("ciudad3").style.display = "none";
+        }
+        
+        function mostrarCiudad3() {
+            document.getElementById("info-inicial").style.display = "none";
+            document.getElementById("ciudad1").style.display = "none";
+            document.getElementById("ciudad2").style.display = "none";
+            document.getElementById("ciudad3").style.display = "block";
+        }
+    </script>
+</body>
+</html>
